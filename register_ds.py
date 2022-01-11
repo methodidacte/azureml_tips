@@ -10,6 +10,7 @@ print(f'Azure ML SDK Version: {azureml.core.VERSION}')
 
 # Connect to workspace
 ws = Workspace.from_config()
+print(ws.get_details())
 
 # Register dataset
 mydsstore = Datastore.get(ws, "workspaceblobstore")

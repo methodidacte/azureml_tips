@@ -7,6 +7,8 @@ from azureml.data.datapath import DataPath
 
 
 print(f'Azure ML SDK Version: {azureml.core.VERSION}')
+
+# Connect to workspace
 ws = Workspace.from_config()
 
 # Register dataset
